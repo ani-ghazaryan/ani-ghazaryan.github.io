@@ -1,0 +1,51 @@
+body {
+    background-image: url(./back6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.main-container {
+    border: 10px solid transparent;
+    width: 80%;
+    min-width: 400px;
+    height: 80%;
+    min-height: 500px;
+    padding: 15px;
+    position: absolute;
+    margin: 0 auto;
+    background-color: olivedrab;
+    border-radius: 30px; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: auto;
+    color: orange;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 75px;
+    color: orange;
+}
+
+hr {
+    width: 35%;
+    height: 3px;
+    background-color: orange;
+    border: orange;
+    margin: auto;
+}
+
+.main-container p {
+    margin: 10px 100px;  
+}
+
+.networks {
+    width: 300px;
+    margin: 25px auto;
+    text-align: center;
+}

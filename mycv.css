@@ -45,7 +45,6 @@ hr {
 }
 
 .networks {
-    width: 300px;
-    margin: 25px auto;
     text-align: center;
+    position: relative;
 }

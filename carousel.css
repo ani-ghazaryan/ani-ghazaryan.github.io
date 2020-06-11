@@ -7,10 +7,10 @@ body {
 
 .main-container {
     border: 10px solid transparent;
-    width: 80%;
-    min-width: 400px;
-    height: 80%;
-    min-height: 500px;
+    width: 70%;
+    /*min-width: 400px;*/
+    /*height: 70%;
+    min-height: 500px;*/
     padding: 15px;
     position: absolute;
     margin: 0 auto;
@@ -27,62 +27,40 @@ h1 {
     text-align: center;
 }
 
-/* Slideshow container*/
 .slideshow-container {
-  width: 80%;
-  height: 80%;
+  width: auto;
+  height: auto;
   position: relative;
   margin: 0 auto;
-  background-color: palevioletred;
   align-content: center;
   padding: 10px 10px;
-}
-
-/* Hide the images by default */
-.slideshow-container .mySlides {
   display: block;
-  align-content: center;
+  text-align: center;
 }
 
-/* Next & previous buttons */
+h2 {
+  text-align: center;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 250px;
+  top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
   color: steelblue;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 34px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.main-container .slideshow-container .text {
-  color: salmon;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 50px;
-  text-align: center;
-}
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -98,4 +76,42 @@ h1 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.mySlides.fade input {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 25px;
+  border-radius: 5px;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  
+}
+
+/*.mySlides.fade input:hover {
+  opacity: 1;
+}*/
+
+.mySlides.fade input#sun::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url('./sun.png');
+  cursor: pointer;
+}
+
+.mySlides.fade input#water::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url('./water.png');
+  cursor: pointer;
 }
